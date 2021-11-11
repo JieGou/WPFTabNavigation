@@ -42,9 +42,11 @@ namespace WpfTabNavigation.Converter
             DateTime resultDateTime;
 
             if (DateTime.TryParse(dateString, out resultDateTime))
-                return resultDateTime;
+      {
+        return resultDateTime;
+      }
 
-            return DateTime.Now;
+      return DateTime.Now;
         }
 
         #endregion
